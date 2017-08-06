@@ -1,4 +1,4 @@
-/* Color Converter */
+/* Color Transformer */
 
 module.exports = {
 

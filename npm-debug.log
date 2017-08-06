@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.5
+3 info using node@v6.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Applications/MAMP/htdocs/github/color-converter',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/parvezahmedkose/.npm/color-converter/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/parvezahmedkose/.npm correctMkdir not in flight; initializing
+10 info lifecycle color-converter@1.0.0~prepublish: color-converter@1.0.0
+11 silly lifecycle color-converter@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/parvezahmedkose/.npm/color-converter/1.0.0/package.tgz',
+12 verbose tar pack   '/Applications/MAMP/htdocs/github/color-converter' ]
+13 verbose tarball /Users/parvezahmedkose/.npm/color-converter/1.0.0/package.tgz
+14 verbose folder /Applications/MAMP/htdocs/github/color-converter
+15 verbose addLocalTarball adding from inside cache /Users/parvezahmedkose/.npm/color-converter/1.0.0/package.tgz
+16 verbose correctMkdir /Users/parvezahmedkose/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd color-converter@1.0.0
+18 verbose afterAdd /Users/parvezahmedkose/.npm/color-converter/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/parvezahmedkose/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/parvezahmedkose/.npm/color-converter/1.0.0/package/package.json written
+21 silly publish { name: 'color-converter',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Color-converter is a color conversion utility library for all Javascript environment (including CommonJs, AMD and ES2015). It helps convert between rgb, hsv and hex color codes.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'test' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/parvezk/color-converter.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'rgb',
+21 silly publish      'hsv',
+21 silly publish      'hex',
+21 silly publish      'hex-codes',
+21 silly publish      'color',
+21 silly publish      'color-conversion',
+21 silly publish      'color-transform' ],
+21 silly publish   author:
+21 silly publish    { name: 'Parvez Kose',
+21 silly publish      email: 'flamboyanz@gmail.com',
+21 silly publish      url: 'https://www.parvez.io/' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/parvezk/color-converter/issues' },
+21 silly publish   homepage: 'https://github.com/parvezk/color-converter#readme',
+21 silly publish   readme: '# Color-Converter\n\nColor-converter is a color conversion utility library for all Javascript environment (including CommonJs, AMD and ES2015). It helps convert between rgb, hsv and hex color codes.',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '42a488020f2101ebdd36cbceeb43b98cde0966af',
+21 silly publish   _id: 'color-converter@1.0.0',
+21 silly publish   _shasum: 'a72b8633ad150d19d4dd2856d1541f6be40cd1d7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name color-converter
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'color-converter',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'color-converter',
+26 silly mapToRegistry   name: 'color-converter',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/color-converter
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/parvezahmedkose/.npm/color-converter/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/color-converter
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:18:50 AM
+33 verbose request using bearer token for auth
+34 verbose request id 8a2c0e0fd63947c4
+35 http request PUT https://registry.npmjs.org/color-converter
+36 http 403 https://registry.npmjs.org/color-converter
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '109',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 06 Aug 2017 05:48:49 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18022-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1501998529.140278,VS0,VE216',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/parvezahmedkose/.npm/registry.npmjs.org/color-converter on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "color-converter". Are you logged in as the correct user? : color-converter
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid color-converter
+43 verbose cwd /Applications/MAMP/htdocs/github/color-converter
+44 error Darwin 16.7.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.3.0
+47 error npm  v3.10.5
+48 error code E403
+49 error you do not have permission to publish "color-converter". Are you logged in as the correct user? : color-converter
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
