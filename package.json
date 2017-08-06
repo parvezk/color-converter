@@ -1,0 +1,22 @@
+{
+  "name": "color-converter",
+  "version": "1.0.0",
+  "description": "Color-converter is a color conversion utility library for all Javascript environment (including CommonJs, AMD and ES2015). It helps convert between rgb, hsv and hex color codes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parvezk/color-converter.git"
+  },
+  "keywords": [
+    "rgb", "hsv", "hex", "hex-codes", "color", "color-converter"
+  ],
+  "author": "Parvez Kose <flamboyanz@gmail.com> (http://www.creativitykills.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parvezk/color-converter/issues"
+  },
+  "homepage": "https://github.com/parvezk/color-converter#readme"
+}
